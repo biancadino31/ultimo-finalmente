@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio da Jennie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Seasons&family=DM+Sans&family=Sloop+Script+Pro&family=Merriweather&family=Feeling+Passionate&family=Marykate&family=EFCO+Brookshire&family=Great+Vibes&family=Clear+Sans&family=DM+Serif+Display&family=Bree+Serif&family=Medula+One&family=Anaktoria&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #000000, #3a4b5f);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Título Principal */
+        h1 {
+            color: #8b9df3;
+            font-family: 'The Seasons', serif;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        /* Imagem e Texto de Introdução */
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro img {
+            width: 200px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            color: #c6d0ff;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Seção "My Story" */
+        .my-story {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .my-story img {
+            width: 150px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .my-story .text {
+            text-align: left;
+        }
+        .my-story .title {
+            color: #8b9df3;
+            font-family: 'Sloop Script Pro', cursive;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .my-story .description {
+            color: #ffffff;
+            font-family: 'EFCO Brookshire', sans-serif;
+        }
+
+        /* Seção "O Olhar Vintage" */
+        .vintage-look {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .vintage-look h2 {
+            color: #597cff;
+            font-family: 'Merriweather', serif;
+            font-size: 2em;
+        }
+        .vintage-look p {
+            color: #c8d0ff;
+            font-family: 'Marykate', serif;
+            font-size: 1.2em;
+        }
+
+        /* Seção "Retratos Atemporais" */
+        .timeless-portraits {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .timeless-portraits img {
+            width: 150px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .timeless-portraits .title {
+            color: #ffffff;
+            font-family: 'Feeling Passionate', cursive;
+            font-size: 2em;
+        }
+        .timeless-portraits .description {
+            color: #c8d0ff;
+            font-family: 'Marykate', serif;
+            font-size: 1.2em;
+        }
+
+        /* Seção "Preto e Branco e Texturas Clássicas" */
+        .classic-textures {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .classic-textures h2 {
+            color: #c6d0ff;
+            font-family: 'Marykate', serif;
+            font-size: 2em;
+        }
+        .classic-textures p {
+            color: #d1d6e9;
+            font-family: 'Great Vibes', serif;
+            font-size: 1.2em;
+        }
+        .classic-textures .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .classic-textures .image-row img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Seção "Projetos Publicados" */
+        .published-projects {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .published-projects h2 {
+            color: #597cff;
+            font-family: 'DM Serif Display', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .published-projects p {
+            color: #94dfff;
+            font-family: 'Clear Sans', sans-serif;
+            font-size: 1.2em;
+        }
+        .published-projects .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .published-projects .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Seção "Depoimentos e Impacto" */
+        .testimonials {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .testimonials h2 {
+            color: #b2d5ff;
+            font-family: 'Medula One', sans-serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .testimonial {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .testimonial img {
+            width: 100px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .testimonial p {
+            color: #afe7ff;
+            font-family: 'Clear Sans', sans-serif;
+            text-align: left;
+            max-width: 400px;
+        }
+
+        /* Seção "Contato" */
+        .contact {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact h2 {
+            color: #597cff;
+            font-family: 'Bree Serif', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .contact p {
+            color: #94dfff;
+            font-family: 'Anaktoria', sans-serif;
+            font-size: 1.2em;
+        }
+
+        /* Rodapé */
+        .footer {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1em;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Título Principal -->
+        <h1>Portfólio da Jennie</h1>
+        
+        <!-- Introdução -->
+        <div class="intro">
+            <img src="image (4).png" alt="Foto de Jennie">
+            <p>Olá, sou a Jennie. Desde pequena, sou fascinada por histórias e momentos que escapam do tempo. Minha paixão pela fotografia me levou a explorar o estilo vintage, onde cada imagem é uma janela para o passado. Acredito que o charme da nostalgia pode transformar experiências cotidianas em algo mágico e eterno. Com meu trabalho, busco capturar a essência do que já foi e dar vida a histórias que merecem ser contadas.
+            </p>
+        </div>
+
+        <!-- Seção My Story -->
+        <div class="my-story">
+            <img src="7ab14a485b52160a43045021e5cf9712.jpg" alt="My Story Image">
+            <div class="text">
+                <div class="title">My Story</div>
+                <p class="description">Minha jornada como  fotógrafa começou em um dia ensolarado em que encontrei uma velha câmera de filme em um mercado de pulgas. Desde então, meu amor por capturar momentos se tornou parte fundamental da minha vida. A estética vintage que permeia meu trabalho é uma expressão da minha apreciação pela beleza do passado. Para mim, cada foto é uma narrativa visual. Sou inspirada por artistas, escritores e fotógrafos que vieram antes de mim, e meu objetivo é honrar essa tradição, criando algo novo e significativo.</p>
+            </div>
+        </div>
+
+        <!-- Seção O Olhar Vintage -->
+        <div class="vintage-look">
+            <h2>O Olhar Vintage</h2>
+            <p>Cada foto é uma história que aguarda para ser contada, repleta de emoções e sutilezas.</p>
+        </div>
+
+        <!-- Seção Retratos Atemporais -->
+        <div class="timeless-portraits">
+            <img src="image (6).png" alt="Retrato Atemporal">
+            <img src="image (5).png" alt="Retrato Atemporal">
+            <div>
+                <div class="title">Retratos Atemporais</div>
+                <p class="description">Minhas fotografias de retratos capturam a essência das pessoas, permitindo que suas expressões e emoções transcendem o tempo. Cada imagem reflete um momento único, como se essas almas fossem personagens de um romance clássico.</p>
+            </div>
+        </div>
+
+        <!-- Seção Preto e Branco e Texturas Clássicas -->
+        <div class="classic-textures">
+            <h2>Preto e Branco e Texturas Clássicas</h2>
+            <p>O uso do preto e branco em meu trabalho permite uma conexão emocional mais profunda. A simplicidade e a profundidade das imagens em preto e branco revelam a beleza do tempo que passou, criando uma atmosfera nostálgica e intemporal.</p>
+            <div class="image-row">
+                <img src="image (7).png" alt="Imagem 1">
+                <img src="image (9).png" alt="Imagem 2">
+                <img src="image (10).png" alt="Imagem 3">
+            </div>
+        </div>
+
+        <!-- Seção Projetos Publicados -->
+        <div class="published-projects">
+            <h2>Projetos Publicados</h2>
+            <p>Estou orgulhosa de compartilhar que algumas de minhas fotografias foram publicadas em revistas e exposições, incluindo:</p>
+            <div class="image-grid">
+                <img src="image (13).png" alt="Projeto 1">
+                <img src="image (8).png" alt="Projeto 2">
+                <img src="image (14).png" alt="Projeto 2">
+                <img src="image (11).png" alt="Projeto 2">
+            </div>
+        </div>
+
+        <!-- Seção Depoimentos e Impacto -->
+        <div class="testimonials">
+            <h2>Depoimentos e Impacto</h2>
+            <div class="testimonial">
+                <img src="image (16).png" alt="Depoimento 1">
+                <p>Park Chan-yeol (EXO)
+                    "A obra de Penelope me toca profundamente. Sua habilidade em capturar momentos simples e transformá-los em arte é admirável. As texturas e a paleta de cores que ela utiliza em suas fotografias vintage criam uma atmosfera nostálgica que nos faz refletir sobre o passado. Além disso, suas fotos de rua têm uma qualidade quase cinematográfica, como se estivéssemos vendo um filme em um instante. É uma verdadeira honra conhecer alguém tão talentoso."</p>
+            </div>
+            <div class="testimonial">
+                <img src="image (17).png" alt="Depoimento 2">
+                <p>Sehun (exo)
+                    "A fotografia de Penelope é uma verdadeira viagem no tempo. Suas imagens retratam emoções que muitas vezes esquecemos, e o estilo vintage traz uma profundidade única que é simplesmente cativante. Cada retrato conta uma história, e é impressionante como ela consegue capturar a essência das pessoas de forma tão autêntica. É inspirador ver como ela transforma o comum em algo extraordinário."</p>
+            </div>
+        </div>
+
+        <!-- Seção Contato -->
+        <div class="contact">
+            <h2>Contato</h2>
+            <p></p>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <p>Estou sempre aberta a novas colaborações e oportunidades! Se você gostaria de saber mais sobre meu trabalho, discutir projetos fotográficos ou simplesmente trocar ideias sobre arte e fotografia vintage, entre em contato!</p>
+        <p>Email: penelope.fotografia@gmail.com
+            Telefone: (41) 95842-8752
+            Redes Sociais:
+            Instagram: @penelope_vintage
+            discord:penelopefotografia</p>
+        </div>
+    </div>
+</body>
+</html>
